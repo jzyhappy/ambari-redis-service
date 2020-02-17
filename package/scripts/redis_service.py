@@ -19,14 +19,14 @@ class redis_service(Script):
   def stop(self, env):
     import params
     env.set_params(params)
-    stop_cmd = format("service redis stop")
+    stop_cmd = format("/bin/systemctl stop redis.service")
     Execute(stop_cmd)
 
   #To start the service, use the linux service start command and pipe output to log file
   def start(self, env):
     import params
     env.set_params(params)
-    start_cmd = format("service redis start")
+    start_cmd = format("/bin/systemctl start redis.service")
     Execute(start_cmd)
 
   #To get status of the, use the linux service status command
