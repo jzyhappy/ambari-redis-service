@@ -6,7 +6,7 @@
       <name>REDIS</name>
       <displayName>Redis</displayName>
       <comment>Redis in-memory data structure store</comment>
-      <version>2.8.12-1</version>
+      <version>5.0.7</version>
       <components>
         <component>
           <name>REDIS_SENTINEL</name>
@@ -52,7 +52,7 @@
           <osFamily>any</osFamily>
           <packages>
             <package>
-              <name>redis-2.8.12</name>
+              <name>redis</name>
             </package>
           </packages>
         </osSpecific>
