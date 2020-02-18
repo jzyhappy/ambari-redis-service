@@ -26,7 +26,7 @@
           <name>REDIS_SERVER</name>
           <displayName>Redis-Master</displayName>
           <category>MASTER</category>
-          <cardinality>1</cardinality>
+          <cardinality>1+</cardinality>
           <commandScript>
             <script>scripts/redis_service.py</script>
             <scriptType>PYTHON</scriptType>
